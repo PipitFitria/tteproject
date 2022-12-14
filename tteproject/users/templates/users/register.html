@@ -1,0 +1,27 @@
+{% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'users/css/register.css' %}" type="text/css">
+    <div class="register">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Join Now</legend>
+                </fieldset>
+                {{ form|crispy }}
+                <div class="form-group">
+                    <button class="btn third center-block">Sign Up</button>
+                </div>
+                <div class="form-group">
+                    <p class="text-muted ml-3" >Already have an account? <a href="{% url 'login' %}">Sign In</a></p>
+                </div>
+            </form>
+    </div>
+    <br><br><br><br>
+    <p class="lead"></p>
+    <footer class="footer">
+        <p>&copy; Pipit Ayu Fitriah | 2022</p>
+    </footer>
+{% endblock %}

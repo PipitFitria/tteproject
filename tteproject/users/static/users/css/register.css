@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-image: url("../gambar/login.png");
+    margin: 0;
+}
+
+div.register{
+    width: 600px;
+    background-color: rgba(0,0,0,.8);
+    margin: 80px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+legend.border-bottom {
+    font-weight: bold;
+    text-align: center;
+    color: #3773cc;
+    font-size: 24px;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+
+div.form-group button{
+    width: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    border-color: #107cc4;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #107cc4 inset, 0 0 0 0 #3498db;
+    transition: all 100ms ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+p {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+  
+p.lead {
+    border-top: 1px solid #afbcc6;
+    border-bottom: 1px solid #eff2f6;
+    height: 0px;
+    margin-bottom: 20px;
+}

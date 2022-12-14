@@ -1,0 +1,82 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'users/css/pegawai.css' %}" type="text/css">
+    <div class="pegawai">                 
+        <!-- <h3 class="text-primary">Data Pegawai Di Pemerintahan Kabupaten Purworejo</h3>
+        <hr style="border-top:1px dotted #000;"/> -->
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5 text-center">
+                <h1 class="display-5 fw-bold">
+                    Data Pegawai<br>
+                    Pemerintahan Kabupaten Purworejo
+                </h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+        <form class="form-inline"  action="create" method="POST">
+            {% csrf_token %}
+        </form>
+        <br />
+        
+        <table class="table table-bordered">
+            <thead class="alert-info">
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>NIK</th>
+                    <th>NIP</th>
+                    <th>Telepon</th>
+                    <th>Provinsi</th>
+                    <th>Kota</th>
+                    <th>Organisasi</th>
+                    <th>Organisasi Unit</th>
+                    <th>Jabatan</th>
+                    <th>Nama Sertifikat</th>
+                    <th>Status Sertifikat</th>
+                    <th>Tipe Sertifikat</th>
+                    <th>Status Data</th>
+                    <th>Tanggal Pengajuan</th>
+                    <th>Tanggal Terbit</th>
+                    <th>Status Pegawai</th>
+                    <th>Dokumen Pendukung</th>
+                    <th>Petugas</th>
+                    <th>Verifikator</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pegawai in pegawais %}
+                <tr>
+                    <td>{{ pegawai.id }}</td>
+                    <td>{{ pegawai.nama }}</td>
+                    <td>{{ pegawai.email }}</td>
+                    <td>{{ pegawai.nik }}</td>
+                    <td>{{ pegawai.nip }}</td>
+                    <td>{{ pegawai.phone }}</td>
+                    <td>{{ pegawai.provinsi }}</td>
+                    <td>{{ pegawai.kota }}</td>
+                    <td>{{ pegawai.organisasi }}</td>
+                    <td>{{ pegawai.organisasi_unit }}</td>
+                    <td>{{ pegawai.jabatan }}</td>
+                    <td>{{ pegawai.certif }}</td>
+                    <td>{{ pegawai.status }}</td>
+                    <td>{{ pegawai.type_certif }}</td>
+                    <td>{{ pegawai.status_data }}</td>
+                    <td>{{ pegawai.tanggal_pengajuan }}</td>
+                    <td>{{ pegawai.tanggal_terbit }}</td>
+                    <td>{{ pegawai.status_pegawai }}</td>
+                    <td>{{ pegawai.dokumen_pendukung }}</td>
+                    <td>{{ pegawai.petugas }}</td>
+                    <td>{{ pegawai.verifikator }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <br><br><br><br>
+    <p class="lead"></p>
+    <footer class="footer">
+      <p>&copy; Pipit Ayu Fitriah | 2022</p>
+    </footer>
+{% endblock %}

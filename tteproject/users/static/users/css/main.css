@@ -1,0 +1,66 @@
+#bg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#main-navbar{
+  color: white;
+  min-height: 14vh;
+  font-size: 15px;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#authstyle{
+  margin-left: 43%;
+  border-radius: 50%;
+}
+
+.navbar-brand img{
+  width: 80px;
+  height: 80px;
+}
+
+/* 
+#header-links{
+  position: relative;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  overflow: hidden;
+  transition: 0.2s;
+} */
+
+
+
+.body{
+margin:10px;
+/* font:600 16px/18px 'Open Sans',sans-serif; */
+}
+
+
+// Remy function
+@function remy($value) {
+@return ($value / 16px) * 1rem;
+}
+
+body {
+font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+background: #e9e9e9;
+}
+
+h1,h2 {
+font-weight: 300;
+color: rgba(255,255,255,1);
+}
+
+label {
+font-size: .85rem;
+text-transform: uppercase;
+color: #ccc;
+}

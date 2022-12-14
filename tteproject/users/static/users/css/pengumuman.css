@@ -1,0 +1,64 @@
+/* * {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+div.pengumuman{
+    width: 500px;
+    background-color: rgba(0,0,0,.8);
+    margin: 80px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+div.iframe iframe{
+    width: 400px;
+    margin: 80px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+  
+p.lead {
+    border-top: 1px solid #afbcc6;
+    border-bottom: 1px solid #eff2f6;
+    height: 0px;
+    margin-bottom: 20px;
+} */
+
+div.pengumuman{
+    margin: 80px auto;
+    padding: 10px;
+}
+
+div.p-5 {
+    background-image: url("../gambar/bg.png");
+    margin: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.row {
+    padding: 50px;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+  
+p.lead {
+    border-top: 1px solid #afbcc6;
+    border-bottom: 1px solid #eff2f6;
+    height: 0px;
+    margin-bottom: 20px;
+}

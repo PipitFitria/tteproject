@@ -1,0 +1,83 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'users/css/home.css' %}" type="text/css">
+    <!-- <div class="container">
+            <div class="row g-0">
+                <div class="col-sm-6 col-md-8" id="header-text">
+                  <h1 id="header-h1">Multi-regulated <br> global broker. </h1>
+                  <p id="header-paragraph">A trusted destination for traders worldwide, <br> Authorised by FCA, ASIC & FSCA</p>
+                  <a class="btn" style="color: white; background-color: #fd5e14;"type="submit" id="body-link-row">Discover More</a>
+                </div>
+
+                <div class="col-6 col-md-4" id="header-image"><img src="images/in-liquid-slide-2.svg " alt=""></div>
+              </div>
+    </div> -->
+    <div class="home">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5 text-center">
+                <h1 class="display-5 fw-bold">Tanda Tangan Elektronik</h1>
+                <p class="lead"></p>
+                <p><a class="btn btn-lg btn-success" href="{% url 'login' %}" role="button">Sign in today</a></p>
+            </div>
+        </div>
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h4>E Signature</h4>            
+                <p class="sub">
+                    E Signature atau electronic signature merupakan tanda tangan elektronik yang digunakan sebagai bukti
+                    keaslian dari identitas seseorang yang mengirimkan dokumen atau pesan.
+                </p>
+                <p class="sub">
+                    Jadi, tanda tangan elektronik lazimnya dilakukan pada transaksi elektronik yang di dalamnya terdapat perbuatan hukum
+                    yang dilakukan dengan menggunakan elektronik, seperti komputer, jaringan komputer dan internet, serta media elektronik lainnya.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h4>Fungsi E Signature</h4>            
+                <p class="sub">
+                    Fungsi utama dari electronic signature ini juga dapat memberikan kekuatan hukum yang sah di dalam
+                    transaksi yang bentuknya elektronik maupun dokumen elektronik.
+                </p>
+                <p class="sub">
+                    Tanda tangan digital atau e signature ini uga bisa menandatangani dokumen dalam bentuk PDF
+                    dengan menggunakan software Adobe Reader DC. Jadi, Anda bisa membuat dokumen legal digital tanpa harus menggunakan kertas. 
+                </p> 
+            </div>
+            <div class="col-lg-6">
+                <h4>Dasar Hukum E Signature</h4>            
+                <p class="sub">
+                    Perihal pengaturan tanda tangan elektronik di Indonesia, 
+                    terdapat pada Pasal 1 angka 12 Undang-Undang No 1 Tahun 2016 tentang Perubahan atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik. 
+                </p>
+                <p class="sub">
+                    Dalam UU tersebut didefinisikan sebagai berikut:
+                </p>
+                <p class="sub-uu">
+                    “Tanda Tangan Elektronik adalah tanda tangan yang terdiri atas informasi elektronik yang dilekatkan,
+                    terasosiasi, atau terkait dengan informasi elektronik lainnya yang digunakan sebagai alat verifikasi dan autentifikasi.”
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h4>Manfaat E Signature</h4>            
+                <p class="sub">
+                    Dalam menciptakan sebuah inovasi digital, tentu terdapat berbagai manfaat yang mampu membantu kepentingan masyarakat. 
+                    Sama halnya dengan e Signature ini. Berikut ini manfaat electronic signature yang penting untuk Anda ketahui: 
+                </p>
+                <ol>
+                    <li>Integritas data Anda akan terjamin asli dan belum pernah dimanipulasi selama pengiriman.</li>
+                    <li>Kerahasiaan pesan terjaga dari pihak-pihak yang tidak berhak untuk membaca atau membukanya. </li>
+                    <li>Otentik, karena melalui identifikasi kebenaran pihak yang berinteraksi atau pihak terkait saja.</li>
+                    <li>Tidak akan terjadi penyangkalan. Electronic signature ini juga dapat mencegah identitas pihak yang 
+                      berkorespondensi untuk melakukan penyangkalan terhadap pesan yang ia kirimkan. Apabila data dan identitas pengirim telah diverifikasi, 
+                      maka pengirim tidak dapat menyangkal dokumen yang telah ditandatangani.</li>
+                </ol>
+            </div>  
+        </div>
+    </div>
+    <br><br><br><br>
+    <p class="lead"></p>
+    <footer class="footer">
+        <p>&copy; Pipit Ayu Fitriah | 2022</p>
+    </footer>
+{% endblock content %}
